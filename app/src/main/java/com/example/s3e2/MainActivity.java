@@ -18,38 +18,39 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        TextView t1 = findViewById(R.id.tv1);
+        final TextView t1 = findViewById(R.id.tv1);
         t1.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "jan", LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, t1.getText().toString(), LENGTH_LONG).show();
             }
         });
 
-        TextView t2 = findViewById(R.id.tv2);
+        final TextView t2 = findViewById(R.id.tv2);
         t2.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "feb", LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, t2.getText().toString(), LENGTH_LONG).show();
             }
         });
-        TextView t3 = findViewById(R.id.tv3);
+        final TextView t3 = findViewById(R.id.tv3);
 
         t3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "mar", LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, t3.getText().toString(), LENGTH_LONG).show();
             }
         });
         TextView t4 = findViewById(R.id.tv4);
 
+
         t4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "apr", LENGTH_LONG).show();
+
+                Toast.makeText(MainActivity.this, "apr" , LENGTH_LONG).show();
             }
         });
         TextView t5 = findViewById(R.id.tv5);

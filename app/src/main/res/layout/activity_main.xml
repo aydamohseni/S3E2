@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
+
     <TableLayout
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintCircleRadius="10dp"
+        app:layout_constraintCircleRadius="20dp"
         android:layout_margin="10dp"
+
         >
         <EditText
             android:id="@+id/tv0"
@@ -18,10 +22,10 @@
             android:textColor="@color/colorAccent"
             android:text="First Quarter"
             android:textStyle="bold"
-            android:clickable="false"
-            />
+            android:importantForAutofill="no" />
+
         <TableRow
-            android:padding="5px">
+            android:padding="5dp" >
 
             <TextView
                 android:id="@+id/tv1"
@@ -43,7 +47,8 @@
             </androidx.appcompat.widget.AppCompatImageButton>
 
         </TableRow>
-        <TableRow         android:padding="5px">
+
+        <TableRow         android:padding="5dp">
 
             <TextView
                 android:id="@+id/tv2"
@@ -63,7 +68,7 @@
             </androidx.appcompat.widget.AppCompatImageButton>
 
         </TableRow>
-        <TableRow          android:padding="5px">
+        <TableRow          android:padding="5dp">
 
             <TextView
                 android:id="@+id/tv3"
@@ -78,7 +83,8 @@
                 android:layout_width="280dp"
                 android:layout_height="55dp"
 
-                android:src="@drawable/c">
+                android:src="@drawable/c"
+                tools:ignore="ExtraText">
                 >
             </androidx.appcompat.widget.AppCompatImageButton>
 
@@ -99,14 +105,14 @@
             />
 
 
-        <TableRow    android:padding="5px">
+        <TableRow    android:padding="5dp">
 
             <TextView
                 android:id="@+id/tv4"
                 android:layout_width="50dp"
                 android:layout_height="55dp"
                 android:background="@color/colorPrimary"
-                android:text="Apr"
+                android:text="@string/apr"
                 android:padding="3dp"
                 />
 
@@ -119,7 +125,7 @@
             </androidx.appcompat.widget.AppCompatImageButton>
 
         </TableRow>
-        <TableRow    android:padding="5px">
+        <TableRow    android:padding="5dp">
 
             <TextView
                 android:id="@+id/tv5"
@@ -139,4 +145,5 @@
 
         </TableRow>
     </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
